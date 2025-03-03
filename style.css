@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding:0px;
+    margin: 0px;
+    outline:0px;
+    box-sizing: border-box;
+    font-family: ''Montserrat', 'sans-serif';
+}
+body {
+    background-color: #282828;
+    overflow-x: hidden;
+}
+nav {
+    background-color: #303336;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    height:60px;
+    padding: 10 100px;
+}
+.logo {
+    cursor:pointer;
+}
+.nav-items {
+    display:flex;
+    flex-direction: row;
+    flex:1;
+    justify-content: space-around;
+    padding:0 0 0 50px;
+    margin-left:330px;
+}
+.nav-items a {
+    color:#fff;
+    font-size:13;
+    font-weight: 500;
+    text-decoration: none;
+    padding:2px;
+    margin-left: 15px;
+}
+.nav-items a i {
+    color:green;
+    padding:5px;
+}
+.search {
+    display: flex;
+    height: 40;
+    padding: 5px;
+    background-color: #1e232b;
+    min-width: 18% !important;
+    border-radius:30px;
+    border:5px solid rgba(155, 155,155,0.2);
+ }
+.search search-data {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color:#fff;
+    border: none;
+    font-size: 17px;
+    font-weight:500 ;
+    background-color: none;
+}
+.search form button {
+    padding: 0 15px;
+    color:#fff;
+    font-size: 17px;
+    background: green;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+.search form button:hover {
+    background: #337635e1;
+}
+.content {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+} 
+.content h2 {
+    justify-content: space-between;
+    letter-spacing: 9px;
+    font-family: "EB Garamond", serif;
+}
+.content p {
+    margin-top: 30px;
+}
+.content p i {
+    color: #337635e1;
+}
+.underline {
+    width: 20%;
+    height: 20px;
+
+}
+.movie-items {
+    height: 10%;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 1%;
+    padding: 20px;
+}
+.column {
+    float: left;
+    cursor: pointer;
+    padding: 10px;
+}
+.row::after {
+    content: '';
+    clear: both;
+    display:table;
+    display: flex;
+    box-sizing: border-box;
+    margin: 3px;
+
+}
+.column h4,p {
+    color: white;
+}
+.column:hover {
+    scale: 1.1;
+}
+/* Thandel CSS */
+.content p img {
+    float: left;
+    margin-left:50px;
+    margin-right:50px;
+    border-radius: 10px;
+}
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+}
+.year {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+.Genres {
+    font-size: 15px;
+    text-align: left;
+    color: rgb(139, 133, 133);
+}
+.Genres span {
+    font-weight: bold;
+    color: white; 
+}
+.Stars span {
+    font-weight: bold;
+    color: white;
+}
+.Director span {
+    font-weight: bold;
+    color: white;
+}
+.Stars {
+    margin-top: 30px ;
+    font-size: 15px;
+    color: rgb(139, 133, 133);
+    text-align: left;
+}
+.Director {
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(139, 133, 133);
+    text-align: left;
+}
+.Stars i {
+    color: white;
+}
+.Director i {
+    color: white;
+}
+.buttons {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+}
+.btn1 {
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px 40px 10px 40px;
+    font-size: 20px;
+}
+
+.btn2 {
+    border: 2px solid rgb(3,236, 11, 0.5266);
+    background-color:rgb(3,236, 11, 0.5266);
+    padding: 10px 40px 10px 40px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.video {
+    padding: 30px;
+    padding-bottom: 0px;
+    margin: 40px;
+    margin-bottom: 0px;
+    border: none;
+}
+.button1 {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.ser-btn1 {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(122,122,122);
+    padding: 10px;
+    background-color:rgba(62, 225, 84, 0.513);
+    font-weight: bold;
+    cursor:pointer;
+}
+.ser-btn2 {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(122, 122, 122);
+    padding: 10px;
+    background-color:rgba(41, 133, 54, 0.513);
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor:pointer;
+    background-color: transparent;
+}
+.ser-btn3 {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(122,122,122);
+    padding: 10px;
+    background-color:rgba(41, 133, 54, 0.513);
+    font-weight: bold;
+    cursor:pointer;
+    background-color: transparent;
+}
+.ser-btn1:hover {
+    background: #41cd46e1; ;
+}
+.ser-btn2:hover {
+    background: #41cd46e1; ;
+}
+.ser-btn3:hover {
+    background: #41cd46e1; ;
+}
+.syn {
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.syn span {
+    color: rgb(8,205,8);
+}
+#footer {
+    background-color:#1e232b;
+    margin-top: 20px;
+    height: 90px;
+}
+#footer a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+.align-left {
+    float: left;
+    padding: 30px;
+    margin-left: 40px;
+}
+.align-right {
+    float: right;
+    padding: 30px;
+    margin-right: 40px;
+}
+.about {
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.about h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}

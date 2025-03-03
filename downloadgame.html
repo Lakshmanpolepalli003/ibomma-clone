@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Changer download</title>
+    <meta name="viewport"content="width=device-width,intial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .container button:disabled {
+            background-color: rgb(0,128,0,0.751);
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+            margin-left: 40%;
+            text-align: center;
+        }
+        .container button {
+            background-color: rgba(34, 220, 34, 0.751);
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+            margin-left: 45%;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <nav>
+        <div class="logo">
+            <img src="https://ibomma.kalpanikfilms.com/wp-content/uploads/2023/05/iBomma-Meta.jpg" height="50" width="70">
+        </div>
+         <div class="nav-items">
+            <a href="#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            <a href="#"><i class="fa-solid fa-user-group"></i>About</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>Contact</a>
+         </div>
+         <div class="search">
+         <form action="#">
+             <input type="search" class="search-data" placeholder="Search...">
+             <button type="submit" class="fas fa-search"></button>
+        </form>
+        </div>
+   </nav>
+   <div class="container">
+    <a href="https://www.youtube.com/embed/9pRk6LTC3x0?si=Qz3SBN1czWEgcF9g" download="movie" target="_blank"><button id="download" disabled>Download</button></a>
+    </div>
+    <script>
+        var downloadBtn= document.getElementById("download");
+        var counter=5;
+        id=setInterval(function(){
+            counter--;
+            if(counter<0){
+                downloadBtn.innerHTML="Download";
+                downloadBtn.removeAttribute('disabled');
+                clearInterval(id)
+            }else{
+                downloadBtn.innerHTML="Please wait for"+counter.toString()+" seconds.";
+            }
+        },1000)
+    </script>
+    </body>
+    </html>
